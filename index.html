@@ -4,30 +4,79 @@
   <meta charset="UTF-8">
   <title>Portafolio de abiesc</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
-    h1 { color: #333; }
-    .proyecto { margin-bottom: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .proyecto {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .proyecto h3 {
+      color: #4CAF50;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>Portafolio de Proyectos de Software</h1>
-  <p>Hola, soy abiesc. Aquí encontrarás mis proyectos de desarrollo.</p>
+  <header>
+    <h1>Portafolio de Proyectos de Software</h1>
+    <p>Desarrollador: abiesc</p>
+  </header>
 
-  <h2>Proyectos</h2>
-  <div class="proyecto">
-    <h3>Sistema de Inventario</h3>
-    <p>Aplicación web para gestionar stock y ventas.</p>
-    <p><a href="https://github.com/abiesc/proyecto-inventario">Ver en GitHub</a></p>
+  <div class="container">
+    <div class="proyecto">
+      <h3>Sistema de Inventario</h3>
+      <p>Aplicación web para gestionar stock y ventas.</p>
+      <a class="btn" href="https://github.com/abiesc/proyecto-inventario">Ver en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+      <h3>App de Tareas</h3>
+      <p>Aplicación móvil para organizar pendientes.</p>
+      <a class="btn" href="https://github.com/abiesc/proyecto-tareas">Ver en GitHub</a>
+    </div>
   </div>
 
-  <div class="proyecto">
-    <h3>App de Tareas</h3>
-    <p>Aplicación móvil para organizar pendientes.</p>
-    <p><a href="https://github.com/abiesc/proyecto-tareas">Ver en GitHub</a></p>
-  </div>
-
-  <h2>Contacto</h2>
-  <p>Email: tuemail@example.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario">Perfil</a></p>
+  <footer>
+    <p>Contacto: tuemail@example.com | LinkedIn: <a href="https://linkedin.com/in/tuusuario" style="color:#4CAF50;">Perfil</a></p>
+  </footer>
 </body>
-</html>
